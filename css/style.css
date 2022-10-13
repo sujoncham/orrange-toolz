@@ -48,3 +48,15 @@
   padding: 5px;
   border-radius: 10px;
 }
+
+.setting-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.credit-form {
+  display: flex;
+  justify-content: space-between;
+}
