@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orrange Toolz</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <div class="main">
         <div class="container">
-            <div>
-                <nav>
+            <div class="dashboard-profile">
+                <nav class="navbar">
                     <img src="./img/logo.png" alt="">
                     <ul>
                         <li>
@@ -50,21 +51,94 @@
                         </li>
                     </ul>
                 </nav>
-                <div>
-                    <span>Balance: $125</span>
+                <div class="header-body">
+                    <div class="header">
+                        <span>Balance: $125</span>
+                        <div>
+                            <img src="./img/profile.png" alt="">
+                            <span>Alexa Jui</span>
+                            <img src="./img/down-arrow.png" alt="">
+                            <ul>
+                                <li><a href="">My Profile</a></li>
+                                <li><a href="">Add Fund</a></li>
+                                <li><a href="">API Decomentation</a></li>
+                                <li><a href="">
+                                        <img src="./img/log-out.png" alt="">
+                                        Log Out
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <div>
-                        <img src="./img/profile.png" alt="">
-                        <span>Alexa Jui</span>
-                        <img src="./img/down-arrow.png" alt="">
-                        <ul>
-                            <li><a href="">My Profile</a></li>
-                            <li><a href="">Add Fund</a></li>
-                            <li><a href="">API Decomentation</a></li>
-                            <li><a href="">
-                                    <img src="./img/log-out.png" alt="">
-                                    Log Out
-                                </a></li>
-                        </ul>
+                        <div class="personal-detail">
+                            <div class="details">
+                                <img src="./img/profile.png" alt="">
+                                <span>Alexa Jui</span>
+                                <span>alexajui@gmail.com</span>
+                                <span>+1 354 785 4125</span>
+                                <span>3213 D Street, Columbus, USA</span>
+                            </div>
+                            <div class="cards-field">
+                                <h1>Your Credit Cards</h1>
+                                <div class="cards">
+                                    <div class="credit-card">
+                                        <h1>Credit Card 1</h1>
+                                        <span>xxxxxxxxx4684</span>
+                                        <img src="./img/delete-1.png" alt="">
+                                    </div>
+                                    <div class="credit-card">
+                                        <h1>Credit Card 2(Default)</h1>
+                                        <span>xxxxxxxxx4684</span>
+                                        <img src="./img/delete-2.png" alt="">
+                                    </div>
+                                    <div class="credit-card">
+                                        <h1>Credit Card 3</h1>
+                                        <span>xxxxxxxxx4684</span>
+                                        <img src="./img/delete-1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-setting">
+                            <div>
+                                <ul class="setting-menu">
+                                    <li><a href="">Update Profile </a></li>
+                                    <li><a href="">Change Password</a></li>
+                                    <li><a href="">Email Notifications</a></li>
+                                    <li><a href="">Auto Recharge Settings</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div>
+                                    <span>Notify me when list verification completes </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        Notify me when list export completes
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>Notify me when list verification result is about to expire</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>Receive Low Credits Email</span>
+                                <div>
+                                    <div>
+                                        <h3>Send Email to*</h3>
+                                        <input type="text" placeholder="alexaju@gmail.com" class="email-credit">
+                                    </div>
+                                    <div>
+                                        <h3>When credits are less than* </h3>
+                                        <input type="text" placeholder="50" class="credit-point">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <button class="save-button">Save Changes</button>
+                        </div>
                     </div>
                 </div>
             </div>

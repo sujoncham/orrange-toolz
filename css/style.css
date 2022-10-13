@@ -1,0 +1,50 @@
+.navbar {
+  background-color: #000;
+  width: 224px;
+  height: 800px;
+}
+
+.header-body {
+  width: 1696px;
+}
+
+.header {
+  background-color: #000;
+  height: 50px;
+  display: flex;
+  justify-content: end;
+}
+
+.dashboard-profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal-detail {
+  display: flex;
+  justify-content: space-between;
+  gap: 3px;
+}
+
+.details {
+  width: 325px;
+  height: 334px;
+}
+
+.cards-field {
+  width: 1281px;
+  height: 334px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.credit-card {
+  width: 387px;
+  height: 154px;
+  padding: 5px;
+  border-radius: 10px;
+}
