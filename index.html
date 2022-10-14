@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orrange Toolz</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -14,9 +15,9 @@
     <div class="main">
         <div class="container">
             <div class="dashboard-profile">
-                <nav class="navbar">
-                    <img src="./img/logo.png" alt="">
-                    <ul>
+                <div class="navbar">
+                    <img class="logo" src="./img/logo.png" alt="">
+                    <ul class="sidebar-menu">
                         <li>
                             <a href=""> <img src="./img/dashboard.png" alt=""> Dashboard</a>
                         </li>
@@ -31,7 +32,7 @@
                                 <img src="./img/logs.png" alt=""> Logs
                                 <img src="./img/down-arrow.png" alt="">
                             </a>
-                            <ul>
+                            <ul class="sub-menu">
                                 <li>
                                     <a href=""> <img src="./img/single-bulk.png" alt=""> Files</a>
                                 </li>
@@ -50,102 +51,131 @@
                             <a href=""> <img src="./img/my-profile.png" alt=""> My Profile</a>
                         </li>
                     </ul>
-                </nav>
+                </div>
                 <div class="header-body">
                     <div class="header">
-                        <span>Balance: $125</span>
                         <div>
-                            <img src="./img/profile.png" alt="">
-                            <span>Alexa Jui</span>
-                            <img src="./img/down-arrow.png" alt="">
-                            <ul>
+                            <span class="balance">Balance:</span>
+                            <span class="balance-figure">$125</span>
+                        </div>
+                        <div class="right-top-profile">
+                            <div onclick="profileDrop()" class="profile-info">
+                                <img src="./img/profile.png" alt="">
+                                <span>Alexa Jui</span>
+                                <img src="./img/down-arrow.png" alt="">
+                            </div>
+                            <ul id="profile-dropdown" class="profile-dropdown">
                                 <li><a href="">My Profile</a></li>
                                 <li><a href="">Add Fund</a></li>
                                 <li><a href="">API Decomentation</a></li>
-                                <li><a href="">
-                                        <img src="./img/log-out.png" alt="">
-                                        Log Out
-                                    </a></li>
+                                <li>
+                                    <a href=""><img src="./img/log-out.png" alt="">
+                                        Log Out </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    <div>
-                        <div>
-                            <div class="personal-detail">
-                                <div class="details">
-                                    <img src="./img/profile.png" alt="">
-                                    <span>Alexa Jui</span>
-                                    <span>alexajui@gmail.com</span>
-                                    <span>+1 354 785 4125</span>
-                                    <span>3213 D Street, Columbus, USA</span>
-                                </div>
-                                <div class="cards-field">
-                                    <div>
-                                        <h1>Your Credit Cards</h1>
-                                        <div class="cards">
-                                            <div class="credit-card">
-                                                <h1>Credit Card 1</h1>
-                                                <span>xxxxxxxxx4684</span>
-                                                <img src="./img/delete-1.png" alt="">
-                                            </div>
-                                            <div class="credit-card">
-                                                <h1>Credit Card 2(Default)</h1>
-                                                <span>xxxxxxxxx4684</span>
-                                                <img src="./img/delete-2.png" alt="">
-                                            </div>
-                                            <div class="credit-card">
-                                                <h1>Credit Card 3</h1>
-                                                <span>xxxxxxxxx4684</span>
-                                                <img src="./img/delete-1.png" alt="">
-                                            </div>
-                                        </div>
+                    <div class="personal-detail">
+                        <div class="details">
+                            <img class="detail-img" src="./img/large-img.png" alt="">
+                            <h3>Alexa Jui</h3>
+                            <p>alexajui@gmail.com</p>
+                            <p>+1 354 785 4125</p>
+                            <p>3213 D Street, Columbus, USA</p>
+                        </div>
+                        <div class="cards-field">
+                            <div class="card-details">
+                                <h1>Your Credit Cards</h1>
+                                <div class="cards">
+                                    <div class="credit-card">
+                                        <h3>Credit Card 1</h3>
+                                        <span>xxxxxxxxx4684</span>
+                                        <img class="delete-img" src="./img/delete-1.png" alt="">
                                     </div>
-                                    <div class="account-setting">
+                                    <div class="credit-card">
+                                        <h3>Credit Card 2(Default)</h3>
+                                        <span>xxxxxxxxx4684</span>
+                                        <img class="delete-img" src="./img/delete-2.png" alt="">
+                                    </div>
+                                    <div class="credit-card">
+                                        <h3>Credit Card 3</h3>
+                                        <span>xxxxxxxxx4684</span>
+                                        <img class="delete-img" src="./img/delete-1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="account-setting">
+                                <div class="menu">
+                                    <ul class="setting-menu">
+                                        <li><a href="">Update Profile </a></li>
+                                        <li><a href="">Change Password</a></li>
+                                        <li><a href="">Email Notifications</a></li>
+                                        <li><a href="">Auto Recharge Settings</a></li>
+                                    </ul>
+                                </div>
+                                <div class="checkbox-check">
+                                    <div class="notify-check">
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span>Notify me when list verification completes </span>
+                                    </div>
+                                    <div class="notify-check">
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span>
+                                            Notify me when list export completes
+                                        </span>
+                                    </div>
+                                    <div class="notify-check">
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span>Notify me when list verification result is about to expire</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="notify-check">
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
                                         <div>
-                                            <ul class="setting-menu">
-                                                <li><a href="">Update Profile </a></li>
-                                                <li><a href="">Change Password</a></li>
-                                                <li><a href="">Email Notifications</a></li>
-                                                <li><a href="">Auto Recharge Settings</a></li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <div>
-                                                <span>Notify me when list verification completes </span>
-                                            </div>
-                                            <div>
-                                                <span>
-                                                    Notify me when list export completes
-                                                </span>
-                                            </div>
-                                            <div>
-                                                <span>Notify me when list verification result is about to expire</span>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <span>Receive Low Credits Email</span>
+                                            <h3>Receive Low Credits Email</h3>
                                             <div class="credit-form">
                                                 <div>
-                                                    <h3>Send Email to*</h3>
+                                                    <h3>Send Email to
+                                                        <sup>
+                                                            <i class="fa fa-star" style="color:orange;"></i>
+                                                        </sup>
+                                                    </h3>
                                                     <input type="text" placeholder="alexaju@gmail.com"
                                                         class="email-credit">
                                                 </div>
                                                 <div>
-                                                    <h3>When credits are less than* </h3>
+                                                    <h3>When credits are less than
+                                                        <sup>
+                                                            <i class="fa fa-star" style="color:orange;"></i>
+                                                        </sup>
+                                                    </h3>
                                                     <input type="text" placeholder="50" class="credit-point">
                                                 </div>
                                             </div>
+
                                         </div>
+                                    </div>
 
-                                    </div>
-                                    <div>
-                                        <button class="save-button">Save Changes</button>
-                                    </div>
                                 </div>
+
                             </div>
-
+                            <div>
+                                <button class="save-button">Save Changes</button>
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>

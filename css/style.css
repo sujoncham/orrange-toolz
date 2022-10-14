@@ -1,7 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: 1920px;
+  margin: 0 auto;
+}
+
 .navbar {
   background-color: #000;
   width: 224px;
-  height: 800px;
+  height: 1189px;
 }
 
 .header-body {
@@ -10,9 +24,84 @@
 
 .header {
   background-color: #000;
-  height: 50px;
+  height: 90px;
   display: flex;
   justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 124px;
+  height: 68px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 11px;
+  margin-bottom: 50px;
+}
+
+.sub-menu {
+  list-style: none;
+}
+
+.right-top-profile {
+  border: 1px solid #ff7901;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.profile-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  position: absolute;
+  list-style: none;
+  top: 100%;
+  border: 1px solid #ff7901;
+  background-color: #fff;
+  padding: 5px;
+  left: -20px;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.profile-dropdown li {
+  padding: 10px;
+}
+
+.profile-dropdown li a {
+  text-decoration: none;
+  color: #666;
+}
+
+.sidebar-menu {
+  padding-left: 50px;
+  list-style: none;
+}
+
+.sidebar-menu li a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.balance-figure {
+  color: #ff7901;
+}
+.balance {
+  color: #fff;
 }
 
 .dashboard-profile {
@@ -23,40 +112,188 @@
 .personal-detail {
   display: flex;
   justify-content: space-between;
-  gap: 3px;
 }
 
 .details {
   width: 325px;
   height: 334px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #b49070;
+  margin: 30px;
+}
+
+.detail-img {
+  width: 100px;
+  height: 100px;
 }
 
 .cards-field {
   width: 1281px;
-  height: 334px;
 }
 
 .cards {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 30px;
 }
 
 .credit-card {
   width: 387px;
   height: 154px;
-  padding: 5px;
+  padding: 10px;
   border-radius: 10px;
+  border: 1px solid #d80;
+  background: #999;
+  position: relative;
+}
+.credit-card h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
+.delete-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card-details {
+  height: 334px;
+  background-color: #999;
+  padding: 30px;
+}
+
+.account-setting {
+  margin-top: 30px;
+  border-bottom: 1px solid #999;
+  margin-bottom: 20px;
+}
 .setting-menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.setting-menu li {
+  padding: 10px;
+}
+
+.setting-menu li a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.menu {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #999;
+}
+
+.checkbox-check {
+  border-bottom: 1px solid #999;
+  margin-bottom: 20px;
 }
 
 .credit-form {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.email-credit {
+  width: 450px;
+  padding: 16px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.credit-point {
+  width: 450px;
+  padding: 16px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.notify-check {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.save-button {
+  padding: 16px 26px;
+  border: none;
+  background-color: #ff7901;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* switch checkbox */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
